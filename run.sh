@@ -14,7 +14,7 @@ cd ddns
 # Check if 'ddns.sh' file exists
 if [ -f "ddns.sh" ]; then
     # Execute the script
-    ./ddns.sh
+    bash ddns.sh
 else
     echo "Error: 'ddns.sh' file not found in 'ddns' directory."
     exit 1
