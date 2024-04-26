@@ -11,5 +11,11 @@ fi
 # Change directory to the cloned repository
 cd ddns
 
-# Execute the script
-./ddns.sh
+# Check if 'ddns.sh' file exists
+if [ -f "ddns.sh" ]; then
+    # Execute the script
+    ./ddns.sh
+else
+    echo "Error: 'ddns.sh' file not found in 'ddns' directory."
+    exit 1
+fi
